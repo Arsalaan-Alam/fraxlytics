@@ -285,6 +285,7 @@ export default function Home() {
                         <div className="p-6">
                           <p className="text-gray-700"><span className="font-medium">Chain:</span> {pool.chain}</p>
                           <p className="text-gray-700 mt-2"><span className="font-medium">Pool Tokens:</span> {pool.pool_tokens.join(', ')}</p>
+                          <p className="text-gray-700 mt-2"><span className="font-medium">Pool Rewards:</span> {pool.pool_rewards.join(', ')}</p>
                           <p className="text-gray-700 mt-2"><span className="font-medium">Liquidity Locked:</span> ${roundOff(pool.liquidity_locked)}</p>
                           <p className="text-gray-700 mt-2"><span className="font-medium">APY:</span> {roundOff(handleInfinityAPY(pool.apy))}%</p>
                         </div>
